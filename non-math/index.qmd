@@ -291,7 +291,7 @@ The place where I found what I love.
 ```
 ## On the keys
 
-Warning: Listen on your own risk.
+Warning: Listen at your own risk. XD
 
 ```{=html}
   <div id="gallery-piano">

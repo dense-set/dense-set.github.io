@@ -56,7 +56,7 @@ Here, you'll find the following kinds of docs:
 
 Though the "Organized results" here often contain all the results proved in the lectures (including tutorials), these also occasionally contain the results that I prove independently, some of which I have highlighted in comments.
 
-### At IITGN
+### At IIT Gandhinagar
 
 ::: column-body-outset-left
 +------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+

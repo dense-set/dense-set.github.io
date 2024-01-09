@@ -169,7 +169,7 @@ The place where I found what I love.
   </div>
 ```
 
-## IITGN
+## IIT Gandhinagar
 
 ```{=html}
   <div id="gallery-iitgn">
@@ -182,7 +182,7 @@ The place where I found what I love.
       <img src="iitgn/hostel-path-0.jpg" alt="a pathway">
     </a>
 
-    <a href="iitgn/hostel-path-1.jpg" data-sub-html="Around the hostels at nigth">
+    <a href="iitgn/hostel-path-1.jpg" data-sub-html="Around the hostels at night">
       <img src="iitgn/hostel-path-1.jpg" alt="a pathway">
     </a>
 

@@ -1,0 +1,145 @@
+---
+title: My math notes
+toc: true
+tbl-colwidths: [30, 15, 55]
+---
+
+<p class="quote">
+For meticulous documentation of the results is almost as important to me as the proofs of results themselves...
+</p>
+
+Here, you'll find following kinds of docs:
+
+```{=html}
+<div class="accordion" id="accordionExample">
+  <div class="accordion-item">
+    <p class="accordion-header" id="headingOne">
+      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+        <strong>Organized results</strong>
+      </button>
+    </p>
+    <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+        <p>These are $\mathrm{\LaTeX}$ pdf's that contain logs of the results I prove during the courses I take, while reading math books, or when inspiration strikes. I obsess over maintaining linearity and being precise. My earlier works used to tolerate zero abuse of language or notation resulting in razor-precise, but also excruciatingly long statements for even simple results. However, over time, I believe I have learned how to strike a balance so that more can be said in less. Nevertheless, I still try to be extremely explicit about any abuses in the remarks that occur throughout the pdf's.</p>
+
+        <p>I am also quite nitpicky in mentioning whenerever any choice (CC, DC or AC) gets used.</p>
+      </div>
+    </div>
+  </div>
+  <div class="accordion-item">
+    <p class="accordion-header" id="headingTwo">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+        <strong>Notes</strong>
+      </button>
+    </p>
+    <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+        <p>These are Google Drive links to my handwritten notes (again as pdf's) that will sometimes accompany the "Organized results" pdf's. These are where I write all the proofs&mdash;really recording the journey whose end products are the "Organized results". Expect these to be messy. But sometimes, I do re-write things nicely.</p>
+      </div>
+    </div>
+  </div>
+  <div class="accordion-item">
+    <p class="accordion-header" id="headingThree">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+        <strong>Errata and suggestions</strong>
+      </button>
+    </p>
+    <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+        These will be for books, and will primarily be pdf's as well.
+      </div>
+    </div>
+  </div>
+</div>
+```
+## Courses
+
+Though the "Organized results" here often contain all the results proved in the lectures (including tutorials), these also occasionally contain the results that I prove independently, some of which I have highlighted in comments.
+
+### At IITGN
+
+::: column-body-outset-left
++------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| Course                                         | Links                                                                                                                                                               | Comments                                                                                                                                                                        |
++================================================+=====================================================================================================================================================================+=================================================================================================================================================================================+
+| (MA 504) Introduction to Linear Algebra        | [o.r.](linalg-master.pdf){target="_blank"}, [notes](https://drive.google.com/drive/folders/1lOl0I-GYd41Ir6TSmIQn6rKs1Z94xM5S?usp=drive_link){target="_blank"}       | –                                                                                                                                                                               |
++------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| (MA 501) Basic Algebra                         | [o.r.](atul-master.pdf){target="_blank"}, [notes](https://drive.google.com/drive/folders/12oUwPs8Zmth3Tmx7V6idv8hhqicmyt2j?usp=drive_link){target="_blank"}         | §4 of Chapter 1: An original formulation to derive the basic properties of permutations.                                                                                        |
++------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| (MA 628) Algebra II                            | [o.r.](indra-master.pdf){target="_blank"}, [notes](https://drive.google.com/drive/folders/13FOplHE4ckiPQx0pl_BovPczYDv2sDrE?usp=drive_link){target="_blank"}        | Very incomplete; content of only the first half of the semester.                                                                                                                |
+|                                                |                                                                                                                                                                     |                                                                                                                                                                                 |
+|                                                |                                                                                                                                                                     | Appendix is my favorite bit, culminating in the relation between ED's, GCD domains, atomic domains, UFD's and Bézout domains.                                                   |
++------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| (MA 605) Commutative Algebra                   | [o.r.](sanjay-master-commie.pdf){target="_blank"}, [notes](https://drive.google.com/drive/folders/1weGk0m5_xZliDL_4LdjpNgbnR3pOBQA?usp=drive_link){target="_blank"} | –                                                                                                                                                                               |
++------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| (MA 509) Topics in Real Analysis               | [o.r.](mohan-master.pdf){target="_blank"}, [notes](https://drive.google.com/drive/folders/1OHbgbJRpOLsY7pYKkeE4n0TY48LeBTKF?usp=drive_link){target="_blank"}        | §3 of Chapter 1: Some results on base representations of reals.                                                                                                                 |
+|                                                |                                                                                                                                                                     |                                                                                                                                                                                 |
+|                                                |                                                                                                                                                                     | Theorem 3.8 of Chapter 3 ("Extending a continuous function at limiting values").                                                                                                |
+|                                                |                                                                                                                                                                     |                                                                                                                                                                                 |
+|                                                |                                                                                                                                                                     | Chapter 4: Generalized definition of differentiability to be able to talk of at limit points; the results that follow are also of such generality.                              |
++------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| (MA 502) Complex Analysis                      | [o.r.](bipul-master.pdf){target="_blank"}, [notes](https://drive.google.com/drive/folders/1PTAqZZuawNhLdXeZVuJmgL6NsRgtQXp1?usp=drive_link){target="_blank"}        | §1 of Chapter 3: Tried laying the foundations for complex line integrals on a firm footing.                                                                                     |
++------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| (MA 629) Introduction to Differential Geometry | [o.r.](rohit-master.pdf){target="_blank"}, [notes](https://drive.google.com/drive/folders/1IkpIXU1dfSk2A9fY_TWgUenjEJV9V0ms?usp=drive_link){target="_blank"}        | Very incomplete; just multi-variable calculus is included. However, what's proven is quite generalized, in the same spirit as in Cartan's amazing book *Differential Calculus*. |
++------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+: {.table .table-hover}
+:::
+
+::: column-margin
+o.r.: Organized results
+:::
+
+### On NPTEL
+
+::: column-body-outset-left
++------------------------------------------------------------------------------------------------------------------+------------------------------------------------+---------------------------------------------+
+| Course                                                                                                           | Links                                          | Comments                                    |
++==================================================================================================================+================================================+=============================================+
+| [Introduction to Rings and Fields](https://archive.nptel.ac.in/courses/111/106/111106131/){target="_blank"}      | [o.r.](hanumanthu-master.pdf){target="_blank"} | Doesn't include last week's content.        |
++------------------------------------------------------------------------------------------------------------------+------------------------------------------------+---------------------------------------------+
+| [An Introduction to Point-Set Topology](https://archive.nptel.ac.in/courses/111/101/111101158/){target="_blank"} | [o.r.](shastri-master.pdf){target="_blank"}    | Only contains the first half of the course. |
++------------------------------------------------------------------------------------------------------------------+------------------------------------------------+---------------------------------------------+
+
+: {.table .table-hover}
+:::
+
+## By topic
+
+::: column-body-outset-left
++-------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------+
+| Topic                               | Links                                                                                                                                                      | Comments                                                                                                                                 |
++=====================================+============================================================================================================================================================+==========================================================================================================================================+
+| Topology, metrics and linear spaces | [o.r.](tmn-master.pdf){target="_blank"}, [notes](https://drive.google.com/drive/folders/1Ig-YK2Sw2jtfifCym8HgopJssXhCR8jQ?usp=drive_link){target="_blank"} | –                                                                                                                                        |
++-------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------+
+| Category theory                     | [o.r.](sanjay-master-cat.pdf){target="_blank"}                                                                                                             | These are notes of CatCafé, a lecture series delivered by [Prof Sanjay](https://iitgn.ac.in/faculty/maths/fac-sanjay){target="\_blank"}. |
++-------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------+
+
+: {.table .table-hover}
+:::
+
+## Books
+
+I do hope to finish a book someday. :')
+
+::: column-body-outset-left
++-------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------+
+| Book                          | Links                                                                                                                                                                                                                                                  | Comments                                                              |
++===============================+========================================================================================================================================================================================================================================================+=======================================================================+
+| Aluffi’s *Algebra: Chapter 0* | [o.r. and e&s](aluffi-master.pdf){target="\"_blank"}                                                                                                                                                                                                   | Until some of Chapter 2.                                              |
++-------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------+
+| Tao’s *Analysis I* (3e)       | [o.r.](tao-master-v1.pdf){target="_blank"}, [o.r.](tao-master-v2.pdf){target="_blank"}, [e&s](tao-errata-v1.pdf){target="\"_blank"}, [notes](https://drive.google.com/drive/folders/1Ntsjn04cqvyP2XvePB996ihdKwRQr_yG?usp=drive_link){target="_blank"} | v1: Until Chapter 6.                                                  |
+|                               |                                                                                                                                                                                                                                                        |                                                                       |
+|                               |                                                                                                                                                                                                                                                        | v2: Until Chapter 4. The Appendix contains some nice general results. |
++-------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------+
+| Artin’s *Algebra* (2e)        | [o.r.](artin-master.pdf){target="_blank"}, [e&s](artin-errata.pdf){target="\"_blank"}                                                                                                                                                                  | Until some of Chapter 4.                                              |
++-------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------+
+| Halmos’ *Naïve Set Theory*    | [e&s](halmos-errata.pdf){target="\"_blank"}, [notes](https://drive.google.com/drive/folders/1R753YSgvX9T3rK23dm_qfh38IwkuJpcv?usp=drive_link){target="_blank"}                                                                                         | Until Section 18.                                                     |
++-------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------+
+
+: {.table .table-hover}
+:::
+
+::: column-margin
+e&s: Errors and suggestions
+:::

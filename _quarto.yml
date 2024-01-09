@@ -1,0 +1,110 @@
+project:
+  type: website
+  preview: 
+    port: 5555
+  resources:
+    - files/
+    - non-math/
+    - notes/
+    - now/
+    - records/
+  output-dir: docs
+
+website:
+  title: "{{< var website.title >}}"
+  description: "{{< var website.description >}}"
+  # favicon:
+  site-url: "{{< var website.site-url >}}"
+  repo-url: "{{< var website.repo-url >}}"
+
+  search: false
+
+  navbar:
+    left:
+      - text: Records
+        href: records/index.qmd
+      - text: Notes # only math notes
+        href: notes/index.qmd
+      - text: Non-math # hobbies + physics stuff
+        href: non-math/index.qmd
+      - text: Now
+        href: now/index.qmd
+    
+    right: 
+      - text: "{{< iconify clarity email-solid >}}"
+        aria-label: email
+        href: mailto:vijaysarthak@yahoo.com
+      - text: "{{< iconify simple-icons x >}}"
+        aria-label: x (previously twitter)
+        href: https://x.com/dense_set
+      - text: "{{< iconify simple-icons mastodon >}}"
+        aria-label: mastodon
+        href: https://mathstodon.xyz/@denseset
+      - text: "{{< iconify simple-icons github >}}"
+        aria-label: github
+        href: https://github.com/dense-set
+      - text: "{{< iconify simple-icons stackexchange >}}"
+        aria-label: stackexchange
+        href: https://stackexchange.com/users/9566496/atom
+  
+  #comments:
+  #  hypothesis: 
+  #    theme: clean
+  #    showHighlights: whenSidebarOpen
+  
+  page-footer: 
+    border: true
+    left: |
+      [
+        {{< iconify fa-brands creative-commons >}} 2023 Sarthak.
+      ]{.footer-block}
+      [
+          All content licensed under<br>
+          [{{< iconify fa-brands creative-commons >}}
+          {{< iconify fa-brands creative-commons-by >}}
+          {{< iconify fa-brands creative-commons-nc >}}
+          {{< iconify fa-brands creative-commons-sa >}} CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.en).
+      ]{.footer-block}
+    center: |
+      *Be a hero,<br>
+      or a villain even!;<br>
+      only never just a mere prop.*
+    right: |
+      [
+        Made with [Quarto](https://quarto.org/).
+      ]{.footer-block}
+      [
+        View the source code on [GitHub {{< iconify fa-brands github >}}]({{< var website.repo-url >}}).
+      ]{.footer-block}
+
+
+
+# Metdata stuff
+pagetitle: "{{< meta title >}} | {{< var website.title >}}"
+description-meta: "{{< var website.description >}}"
+author-meta: "{{< var website.author >}}"
+
+
+format:
+  html:
+    theme:
+      dark: [darkly, custom-dark.scss]
+      light: [flatly, custom-light.scss]
+    
+    css: common.css
+    toc: false
+    smooth-scroll: true
+    include-after-body: 
+      - text: |
+          <script src="light-dark-modes.js"></script>
+
+          <script type="text/x-mathjax-config">
+            MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
+          </script>
+          <script type="text/javascript"
+            src="http://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+          </script>
+
+    anchor-sections: true
+
+title-block-banner: true

@@ -1,0 +1,66 @@
+---
+title: My records
+toc: true
+format: 
+    html: 
+        css: records.css
+---
+
+## Curriculum vitæ
+
+Last updated: December, 2023
+
+```{=html}
+    <div class="btn-container">
+        <a href="cv-dec-2023.pdf" class="btn btn-primary" target="_blank">
+            <div>
+                <iconify-icon inline="" icon="basil:file-download-solid" style="font-size: 2em;"></iconify-icon>
+            </div>
+            <div>
+                Download CV
+            </div>
+        </a>
+    </div>
+
+    <iframe src="cv-dec-2023.pdf" style="width: 100%; aspect-ratio: 1/1.2"></iframe>
+```
+## Courses completed
+
+The following are the courses that I have taken since my physics-to-math switch.
+
+### At IIT Gandhinagar
+
+(firstly algebra, then analysis, and finally miscellaneous)
+
+| Sem | Course                                | Instructor                                                                             | Performance |
+|------------------|------------------|-------------------|------------------|
+| I   | Introduction to Linear Algebra        | –                                                                                      | A-          |
+| I   | Basic Algebra                         | [Atul Dixit](https://iitgn.ac.in/faculty/maths/fac-atul){target="_blank"}              | A           |
+| II  | Algebra II                            | [Indranath Sengupta](https://iitgn.ac.in/faculty/maths/fac-indranath){target="_blank"} | A           |
+| II  | Commutative Algebra                   | [Sanjay Amrutiya](https://iitgn.ac.in/faculty/maths/fac-sanjay){target="_blank"}       | A           |
+| III | Algebraic Topology                    | [Sanjay Amrutiya](https://iitgn.ac.in/faculty/maths/fac-sanjay){target="_blank"}       | A-          |
+| I   | Topology                              | [Tanya Srivastava](https://iitgn.ac.in/faculty/maths/fac-tanya){target="_blank"}       | A-          |
+| I   | Topics in Real Analysis               | [Mohan Joshi](https://iitgn.ac.in/faculty/maths/fac-mohan){target="_blank"}            | A+          |
+| II  | Complex Analysis                      | [Bipul Saurabh](https://iitgn.ac.in/faculty/maths/fac-bipul){target="_blank"}          | A           |
+| III | Functional Analysis                   | [Gadadhar Misra](https://www.isibang.ac.in/~gm/){target="_blank"}                      | A           |
+| II  | Introduction to Differential Geometry | [Rohit Mishra](https://iitgn.ac.in/faculty/maths/fac-rohit){target="_blank"}           | A           |
+| III | Probability Theory                    | –                                                                                      | A-          |
+| II  | Ordinary Differential Equations       | –                                                                                      | B-          |
+| III | Partial Differential Equations        | –                                                                                      | B-          |
+| III | Project in Mathematics                | (under [Gadadhar Misra](https://www.isibang.ac.in/~gm/){target="_blank"})              | A           |
+| I   | Computational Complexity Theory       | [Balagopal Komarath](https://bkomarath.rbgo.in/){target="_blank"}                      | A           |
+| III | French Studies                        | –                                                                                      | A           |
+| II  | Writing                               | –                                                                                      | A-          |
+
+: {.table-hover .table}
+
+### Other
+
+| Platform | Course                                                                                                                                          | Instructor(s)                               | Certificate                                                |
+|------------------|------------------|-------------------|------------------|
+| NPTEL    | [An Introfuction to Point-Set Topology: Part I](https://archive.nptel.ac.in/courses/111/101/111101158/){target="_blank"}                        | Anant Shastri, IIT Bombay                   | (only completed half of the course)                        |
+| NPTEL    | [Introduction to Rings and Fields](https://archive.nptel.ac.in/courses/111/106/111106131/){target="_blank"}                                     | Krishna Hanumanthu, IIT Madras              | (didn't take the exam)                                     |
+| NPTEL    | [Physics through Computational Thinking](https://nptel.ac.in/courses/115106121){target="_blank"}                                                | Auditya Sharma and Ambar Jain, IISER Bhopal | [Link](physics-through-computational.jpg){target="_blank"} |
+| edX      | [Italian Language and Culture: Beginner (2023-24)](https://learning.edx.org/course/course-v1:WellesleyX+Italian1x+1T2023/home){target="_blank"} | Daniela Bartalesi-Gard, Wellesly College    | [Link](italian-edx.pdf){target="_blank"}                   |
+
+: {.table-hover .table}

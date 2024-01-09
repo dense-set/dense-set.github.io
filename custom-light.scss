@@ -1,0 +1,63 @@
+/*-- scss:defaults --*/
+// Color system from flatly.scss
+$white:    #fff !default;
+$gray-100: #f8f9fa !default;
+$gray-200: #ecf0f1 !default;
+$gray-300: #dee2e6 !default;
+$gray-400: #ced4da !default;
+$gray-500: #b4bcc2 !default;
+$gray-600: #95a5a6 !default;
+$gray-700: #7b8a8b !default;
+$gray-800: #343a40 !default;
+$gray-900: #212529 !default;
+$black:    #000 !default;
+
+$blue:    #2c3e50 !default;
+$indigo:  #6610f2 !default;
+$purple:  #6f42c1 !default;
+$pink:    #e83e8c !default;
+$red:     #e74c3c !default;
+$orange:  #fd7e14 !default;
+$yellow:  #f39c12 !default;
+$green:   #18bc9c !default;
+$teal:    #20c997 !default;
+$cyan:    #3498db !default;
+
+
+/*-- scss:rules --*/
+
+// The bar above/beside the dark mode toggle
+// and increasing the toggle size for small vw
+@media (max-width: map-get($grid-breakpoints,  "lg")) {
+    .navbar-nav.navbar-nav-scroll.ms-auto {
+        font-size: 1.3em;
+    }
+    
+    .navbar .quarto-navbar-tools {
+        border-top: 2px solid #ccd1d5;
+        margin-top: 12.75px;
+    }
+
+    .quarto-color-scheme-toggle .bi::before {
+        height: 1.5rem;
+        width: 1.5rem;
+        background-size: 1.5rem 1.5rem;
+      }
+}
+@media (min-width: map-get($grid-breakpoints,  "lg")) {
+    .quarto-navbar-tools {
+        border-left: 2px solid #ccd1d5;
+        margin-left: 5px;
+        padding-left: 7px;
+    }
+}
+
+// title-banner color
+.quarto-title-banner.page-columns.page-full {
+    background: #0f7d69;
+}
+
+// footer bgcolor
+footer .nav-footer {
+    background: #199e7c5b;
+}

@@ -1,0 +1,22 @@
+p {
+  text-align: justify;
+}
+
+.footer-block {
+  display: block;
+  margin-bottom: 0.4 em;
+}
+
+.navbar-nav.navbar-nav-scroll.ms-auto {
+  flex-direction: row;
+}
+
+p.quote {
+  font-size: 1.2em;
+  padding-bottom: 20px;
+  font-style: italic;
+}
+
+.nav-footer-center {
+  margin-top: 0;
+}/*# sourceMappingURL=common.css.map */

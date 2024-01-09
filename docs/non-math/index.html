@@ -1,0 +1,822 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.3.450">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="author" content="Sarthak">
+<meta name="description" content="Personal website for Sarthak">
+
+<title>Non-math | dense set</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-html/quarto.js"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-dark.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-dark.min.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<script src="../site_libs/quarto-contrib/iconify-1.0.0-beta.2/iconify-icon.min.js"></script>
+<script id="quarto-search-options" type="application/json">{
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+<style>html{ scroll-behavior: smooth; }</style>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/justifiedGallery/3.8.1/css/justifiedGallery.min.css">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.2/css/lightgallery.min.css">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.2/css/lg-thumbnail.min.css">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.2/css/lg-zoom.min.css">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.2/css/lg-video.min.css">
+
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+
+<link rel="stylesheet" href="../common.css">
+</head>
+
+<body class="nav-fixed">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-dark ">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container">
+    <a class="navbar-brand" href="../index.html">
+    <span class="navbar-title">dense set</span>
+    </a>
+  </div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="../records/index.html" rel="" target="">
+ <span class="menu-text">Records</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../notes/index.html" rel="" target="">
+ <span class="menu-text">Notes</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link active" href="../non-math/index.html" rel="" target="" aria-current="page">
+ <span class="menu-text">Non-math</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../now/index.html" rel="" target="">
+ <span class="menu-text">Now</span></a>
+  </li>  
+</ul>
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="mailto:vijaysarthak@yahoo.com" rel="" target="">
+ <span class="menu-text"><iconify-icon inline="" icon="clarity:email-solid"></iconify-icon></span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="https://x.com/dense_set" rel="" target="">
+ <span class="menu-text"><iconify-icon inline="" icon="simple-icons:x"></iconify-icon></span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="https://mathstodon.xyz/@denseset" rel="" target="">
+ <span class="menu-text"><iconify-icon inline="" icon="simple-icons:mastodon"></iconify-icon></span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="https://github.com/dense-set" rel="" target="">
+ <span class="menu-text"><iconify-icon inline="" icon="simple-icons:github"></iconify-icon></span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="https://stackexchange.com/users/9566496/atom" rel="" target="">
+ <span class="menu-text"><iconify-icon inline="" icon="simple-icons:stackexchange"></iconify-icon></span></a>
+  </li>  
+</ul>
+            <div class="quarto-navbar-tools">
+  <a href="" class="quarto-color-scheme-toggle quarto-navigation-tool  px-1" onclick="window.quartoToggleColorScheme(); return false;" title="Toggle dark mode"><i class="bi"></i></a>
+</div>
+          </div> <!-- /navcollapse -->
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<header id="title-block-header" class="quarto-title-block default page-columns page-full">
+  <div class="quarto-title-banner page-columns page-full">
+    <div class="quarto-title column-body">
+      <h1 class="title">Non-math</h1>
+                      </div>
+  </div>
+    
+  
+  <div class="quarto-title-meta">
+
+      
+    
+      
+    </div>
+    
+  
+  </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#alwar" id="toc-alwar" class="nav-link active" data-scroll-target="#alwar">Alwar</a></li>
+  <li><a href="#st.-stephens" id="toc-st.-stephens" class="nav-link" data-scroll-target="#st.-stephens">St.&nbsp;Stephen’s</a></li>
+  <li><a href="#iitgn" id="toc-iitgn" class="nav-link" data-scroll-target="#iitgn">IITGN</a></li>
+  <li><a href="#creations" id="toc-creations" class="nav-link" data-scroll-target="#creations">Creations</a></li>
+  <li><a href="#on-the-keys" id="toc-on-the-keys" class="nav-link" data-scroll-target="#on-the-keys">On the keys</a></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content quarto-banner-title-block" id="quarto-document-content">
+
+
+
+
+<p class="quote">
+Glimpses of my (meagre) non-mathematical life…
+</p>
+  <div id="gallery-unfiled">
+
+    <a href="pigeons-flying.jpg" data-sub-html="Clicked on a school trip">
+      <img src="pigeons-flying.jpg" alt="pigeons flying">
+    </a>
+
+    <a href="elphie-5.jpg" data-sub-html="She was with me for a while, I called her <em>Elphie</em>...">
+    <img src="elphie-5.jpg" alt="elphie">
+    </a>
+    
+    <a href="my-jewels.jpg" data-sub-html="I collect beautiful things!">
+      <img src="my-jewels.jpg" alt="my jewels">
+    </a>
+
+    <a href="cat-0.jpg" data-sub-html="A friendly cat I found in NIUS">
+      <img src="cat-0.jpg" alt="a cat">
+    </a>
+
+    <a href="diyas.jpg" data-sub-html="About to be taken to the temple by <em>Maa</em> and <em>Amma</em>">
+      <img src="diyas.jpg" alt="diwali diyas">
+    </a>
+    
+    <a href="nice-click.jpg" data-sub-html="Clicked on a school trip">
+      <img src="nice-click.jpg" alt="landscape">
+    </a>
+    
+    <a href="cat-1.jpg" data-sub-html="My feline friends at the Delhi apartment">
+      <img src="cat-1.jpg" alt="two cats">
+    </a>
+
+    <a href="solar-eclipse.jpg" data-sub-html="Solar eclipse from our Alwar home">
+      <img src="solar-eclipse.jpg" alt="solar eclipse">
+    </a>
+
+    <a href="elphie-4.jpg" data-sub-html="Elphie trying to make sense of her daddy's chem books">
+      <img src="elphie-4.jpg" alt="elphie">
+    </a>
+
+  </div>
+<p>
+</p>
+<section id="alwar" class="level2">
+<h2 class="anchored" data-anchor-id="alwar">Alwar</h2>
+<p>Nestled among the Aravali range in Rajasthan sits my hometown Alwar.</p>
+  <div id="gallery-alwar">
+    
+    <a href="alwar/clouds.jpg" data-sub-html="Clouds with silver linings">
+      <img src="alwar/clouds.jpg" alt="clouds">
+    </a>
+
+    <a href="alwar/fire.jpg" data-sub-html="<em>Holika dahan</em> in our community park">
+      <img src="alwar/fire.jpg" alt="fire">
+    </a>
+
+    <a href="alwar/mountains-1.jpg" data-sub-html="Mountains from our roof">
+      <img src="alwar/mountains-1.jpg" alt="mountains">
+    </a>
+
+    <a href="alwar/mountains-2.jpg" data-sub-html="Our neighborhood against the Aravalis">
+      <img src="alwar/mountains-2.jpg" alt="mountains">
+    </a>
+
+    <a href="alwar/sunrise.jpg" data-sub-html="Sunrise from <em>Mooti Doongri</em>">
+      <img src="alwar/sunrise.jpg" alt="sunrise">
+    </a>
+
+    <a href="alwar/sunset.jpg" data-sub-html="A calm sunset from our roof">
+      <img src="alwar/sunset.jpg" alt="sunset">
+    </a>
+
+    <a href="alwar/dark-clouds.jpg" data-sub-html="Looks like it's gonna rain">
+      <img src="alwar/dark-clouds.jpg" alt="dark clouds">
+    </a>
+
+    <a href="alwar/rainbow.jpg" data-sub-html="Rainbow after a shower">
+      <img src="alwar/rainbow.jpg" alt="rainbow">
+    </a>
+
+  </div>
+</section>
+<section id="st.-stephens" class="level2">
+<h2 class="anchored" data-anchor-id="st.-stephens">St.&nbsp;Stephen’s</h2>
+<p>The place where I found what I love.</p>
+  <div id="gallery-stephens">
+
+    <a href="stephens/balcony-in.jpg" data-sub-html="The first floor of the main building">
+      <img src="stephens/balcony-in.jpg" alt="inside balcony">
+    </a>
+    
+    <a href="stephens/balcony-out.jpg" data-sub-html="From the balcony">
+      <img src="stephens/balcony-out.jpg" alt="from the balcony">
+    </a>
+
+    <a href="stephens/convo-0.jpg" data-sub-html="The Doctor graduating me">
+      <img src="stephens/convo-0.jpg" alt="convocation">
+    </a>
+
+    <a href="stephens/convo-2.jpg" data-sub-html="With my Physics dept">
+      <img src="stephens/convo-2.jpg" alt="convocation">
+    </a>
+
+    <a href="stephens/monsoon.jpg" data-sub-html="The science lawns in monsoon">
+      <img src="stephens/monsoon.jpg" alt="monsoon">
+    </a>
+
+    <a href="stephens/nplt.jpg" data-sub-html="Inside NPLT">
+      <img src="stephens/nplt.jpg" alt="nplt">
+    </a>
+
+    <a href="stephens/science-block-entrance.jpg" data-sub-html="Canopied corridor of the Physics dept">
+      <img src="stephens/science-block-entrance.jpg" alt="science block entrance">
+    </a>
+
+    <a href="stephens/science-block-lawn.jpg" data-sub-html="The science block lawns">
+      <img src="stephens/science-block-lawn.jpg" alt="science block lawn">
+    </a>
+
+    <a href="stephens/staircase.jpg" data-sub-html="The staircase in the main buolding">
+      <img src="stephens/staircase.jpg" alt="staircase">
+    </a>
+
+  </div>
+</section>
+<section id="iitgn" class="level2">
+<h2 class="anchored" data-anchor-id="iitgn">IITGN</h2>
+  <div id="gallery-iitgn">
+
+    <a href="iitgn/beetle.jpg" data-sub-html="A beetle outside AB5 study room">
+      <img src="iitgn/beetle.jpg" alt="beetle">
+    </a>
+
+    <a href="iitgn/hostel-path-0.jpg" data-sub-html="A pathway through the hostel area">
+      <img src="iitgn/hostel-path-0.jpg" alt="a pathway">
+    </a>
+
+    <a href="iitgn/hostel-path-1.jpg" data-sub-html="Around the hostels at nigth">
+      <img src="iitgn/hostel-path-1.jpg" alt="a pathway">
+    </a>
+
+    <a href="iitgn/lal-minar-0.jpg" data-sub-html="<em>Lal Minar</em>">
+      <img src="iitgn/lal-minar-0.jpg" alt="lal minar">
+    </a>
+
+    <a href="iitgn/lal-minar-1.jpg" data-sub-html="<em>Lal minar</em> through thorns">
+      <img src="iitgn/lal-minar-1.jpg" alt="lal minar">
+    </a>
+
+    <a href="iitgn/lamp.jpg" data-sub-html="A lamp through the trees at night">
+      <img src="iitgn/lamp.jpg" alt="a lamp">
+    </a>
+
+    <a href="iitgn/mantis.jpg" data-sub-html="A mantis in Firpeal">
+      <img src="iitgn/mantis.jpg" alt="mantis">
+    </a>
+
+    <a href="iitgn/mongoose.jpg" data-sub-html="A mongoose in morning">
+      <img src="iitgn/mongoose.jpg" alt="mongoose">
+    </a>
+
+    <a href="iitgn/room.jpg" data-sub-html="My hostel room">
+      <img src="iitgn/room.jpg" alt="my room">
+    </a>
+
+    <a href="iitgn/solar-panel.jpg" data-sub-html="The solar pathway">
+      <img src="iitgn/solar-panel.jpg" alt="solar path">
+    </a>
+
+    <a href="iitgn/summer-flies.jpg" data-sub-html="Tiny flies during summer">
+      <img src="iitgn/summer-flies.jpg" alt="summer flies">
+    </a>
+
+    <a href="iitgn/sunflowers.jpg" data-sub-html="Sunflowers">
+      <img src="iitgn/sunflowers.jpg" alt="sunflowers">
+    </a>
+
+    <a href="iitgn/trees-0.jpg" data-sub-html="Trees">
+      <img src="iitgn/trees-0.jpg" alt="trees">
+    </a>
+
+    <a href="iitgn/trees-1.jpg" data-sub-html="Photgenic landscape">
+      <img src="iitgn/trees-1.jpg" alt="landscape">
+    </a>
+
+  </div>
+</section>
+<section id="creations" class="level2">
+<h2 class="anchored" data-anchor-id="creations">Creations</h2>
+  <div id="gallery-creations">
+
+    <a href="creations/rangoli-2.jpg" data-sub-html="<em>Diwali ki rangoli</em>">
+      <img src="creations/rangoli-2.jpg" alt="rangoli">
+    </a>
+    
+    <a href="creations/crochet-0.jpg" data-sub-html="A crochet doily">
+      <img src="creations/crochet-0.jpg" alt="crochet">
+    </a>
+
+    <a href="creations/cube.jpg" data-sub-html="From my fine arts dossier">
+      <img src="creations/cube.jpg" alt="still-life">
+    </a>
+
+    <a href="creations/crochet-1.jpg" data-sub-html="Finest crochet doily I have done so far">
+      <img src="creations/crochet-1.jpg" alt="crochet">
+    </a>
+
+    <a href="creations/flower.jpg" data-sub-html="From my fine arts dossier">
+      <img src="creations/flower.jpg" alt="flower">
+    </a>
+
+    <a href="creations/dodecahedron.jpeg" data-sub-html="Origami dodecahedron">
+      <img src="creations/dodecahedron.jpeg" alt="dodecahedron">
+    </a>
+
+    <a href="creations/rangoli-1.jpg" data-sub-html="<em>Diwali ki rangoli</em>">
+      <img src="creations/rangoli-1.jpg" alt="rangoli">
+    </a>
+
+    <a href="creations/crochet-3.jpg" data-sub-html="A crochet doily">
+      <img src="creations/crochet-3.jpg" alt="crochet">
+    </a>
+
+    <a href="creations/poster.jpg" data-sub-html="A poster I made in highschool">
+      <img src="creations/poster.jpg" alt="poster">
+    </a>
+
+    <a href="creations/crochet-4.jpg" data-sub-html="My first crochet doily">
+      <img src="creations/crochet-4.jpg" alt="crochet">
+    </a>
+
+    <a href="creations/rangoli-0.jpg" data-sub-html="<em>Diwali ki rangoli</em>">
+      <img src="creations/rangoli-0.jpg" alt="rangoli">
+    </a>
+
+    <a href="creations/birthday-kashish.jpg" data-sub-html="A birthday pop-up">
+      <img src="creations/birthday-kashish.jpg" alt="birthday">
+    </a>
+
+  </div>
+</section>
+<section id="on-the-keys" class="level2">
+<h2 class="anchored" data-anchor-id="on-the-keys">On the keys</h2>
+<p>Warning: Listen on your own risk.</p>
+  <div id="gallery-piano">
+
+    <a data-src="https://vimeo.com/900953943?share=copy" data-sub-html="<em>&quot;It's young Bach, he dedicated it to his brother.&quot;</em>">
+    <img src="piano/bach.jpg" alt="bach">
+    </a>
+
+    <a data-src="https://youtu.be/pE7A7hAUlBQ" data-sub-html="Easy On Me">
+    <img src="piano/easy-on-me.jpg" alt="easy on me">
+    </a>
+
+    <a data-src="https://youtu.be/rjTxQOpaWOk" data-sub-html="<em>&quot;Hello, it's me&quot;">
+    <img src="piano/hello.jpg" alt="hello">
+    </a>
+
+    <a data-src="https://vimeo.com/900953899?share=copy" data-sub-html="Make You Feel My Love">
+    <img src="piano/make-you-feel-my-love.jpg" alt="make you feel my love">
+    </a>
+
+  </div>
+
+
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const disableStylesheet = (stylesheets) => {
+    for (let i=0; i < stylesheets.length; i++) {
+      const stylesheet = stylesheets[i];
+      stylesheet.rel = 'prefetch';
+    }
+  }
+  const enableStylesheet = (stylesheets) => {
+    for (let i=0; i < stylesheets.length; i++) {
+      const stylesheet = stylesheets[i];
+      stylesheet.rel = 'stylesheet';
+    }
+  }
+  const manageTransitions = (selector, allowTransitions) => {
+    const els = window.document.querySelectorAll(selector);
+    for (let i=0; i < els.length; i++) {
+      const el = els[i];
+      if (allowTransitions) {
+        el.classList.remove('notransition');
+      } else {
+        el.classList.add('notransition');
+      }
+    }
+  }
+  const toggleColorMode = (alternate) => {
+    // Switch the stylesheets
+    const alternateStylesheets = window.document.querySelectorAll('link.quarto-color-scheme.quarto-color-alternate');
+    manageTransitions('#quarto-margin-sidebar .nav-link', false);
+    if (alternate) {
+      enableStylesheet(alternateStylesheets);
+      for (const sheetNode of alternateStylesheets) {
+        if (sheetNode.id === "quarto-bootstrap") {
+          toggleBodyColorMode(sheetNode);
+        }
+      }
+    } else {
+      disableStylesheet(alternateStylesheets);
+      toggleBodyColorPrimary();
+    }
+    manageTransitions('#quarto-margin-sidebar .nav-link', true);
+    // Switch the toggles
+    const toggles = window.document.querySelectorAll('.quarto-color-scheme-toggle');
+    for (let i=0; i < toggles.length; i++) {
+      const toggle = toggles[i];
+      if (toggle) {
+        if (alternate) {
+          toggle.classList.add("alternate");     
+        } else {
+          toggle.classList.remove("alternate");
+        }
+      }
+    }
+    // Hack to workaround the fact that safari doesn't
+    // properly recolor the scrollbar when toggling (#1455)
+    if (navigator.userAgent.indexOf('Safari') > 0 && navigator.userAgent.indexOf('Chrome') == -1) {
+      manageTransitions("body", false);
+      window.scrollTo(0, 1);
+      setTimeout(() => {
+        window.scrollTo(0, 0);
+        manageTransitions("body", true);
+      }, 40);  
+    }
+  }
+  const isFileUrl = () => { 
+    return window.location.protocol === 'file:';
+  }
+  const hasAlternateSentinel = () => {  
+    let styleSentinel = getColorSchemeSentinel();
+    if (styleSentinel !== null) {
+      return styleSentinel === "alternate";
+    } else {
+      return false;
+    }
+  }
+  const setStyleSentinel = (alternate) => {
+    const value = alternate ? "alternate" : "default";
+    if (!isFileUrl()) {
+      window.localStorage.setItem("quarto-color-scheme", value);
+    } else {
+      localAlternateSentinel = value;
+    }
+  }
+  const getColorSchemeSentinel = () => {
+    if (!isFileUrl()) {
+      const storageValue = window.localStorage.getItem("quarto-color-scheme");
+      return storageValue != null ? storageValue : localAlternateSentinel;
+    } else {
+      return localAlternateSentinel;
+    }
+  }
+  let localAlternateSentinel = 'alternate';
+  // Dark / light mode switch
+  window.quartoToggleColorScheme = () => {
+    // Read the current dark / light value 
+    let toAlternate = !hasAlternateSentinel();
+    toggleColorMode(toAlternate);
+    setStyleSentinel(toAlternate);
+  };
+  // Ensure there is a toggle, if there isn't float one in the top right
+  if (window.document.querySelector('.quarto-color-scheme-toggle') === null) {
+    const a = window.document.createElement('a');
+    a.classList.add('top-right');
+    a.classList.add('quarto-color-scheme-toggle');
+    a.href = "";
+    a.onclick = function() { try { window.quartoToggleColorScheme(); } catch {} return false; };
+    const i = window.document.createElement("i");
+    i.classList.add('bi');
+    a.appendChild(i);
+    window.document.body.appendChild(a);
+  }
+  // Switch to dark mode if need be
+  if (hasAlternateSentinel()) {
+    toggleColorMode(true);
+  } else {
+    toggleColorMode(false);
+  }
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    text: function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+  function tippyHover(el, contentFn) {
+    const config = {
+      allowHTML: true,
+      content: contentFn,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start'
+    };
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      return note.innerHTML;
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+</div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left"><span class="footer-block"><iconify-icon inline="" icon="fa-brands:creative-commons"></iconify-icon> 2023 Sarthak.</span> <span class="footer-block">All content licensed under<br> <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.en"><iconify-icon inline="" icon="fa-brands:creative-commons"></iconify-icon> <iconify-icon inline="" icon="fa-brands:creative-commons-by"></iconify-icon> <iconify-icon inline="" icon="fa-brands:creative-commons-nc"></iconify-icon> <iconify-icon inline="" icon="fa-brands:creative-commons-sa"></iconify-icon> CC BY-NC-SA 4.0</a>.</span></div>   
+    <div class="nav-footer-center"><em>Be a hero,<br> or a villain even!;<br> only never just a mere prop.</em></div>
+    <div class="nav-footer-right"><span class="footer-block">Made with <a href="https://quarto.org/">Quarto</a>.</span> <span class="footer-block">View the source code on <a href="https://github.com/dense-set/dense-set.github.io">GitHub <iconify-icon inline="" icon="fa-brands:github"></iconify-icon></a>.</span></div>
+  </div>
+</footer>
+<script src="light-dark-modes.js"></script>
+
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
+</script>
+<script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/justifiedGallery/3.8.1/js/jquery.justifiedGallery.min.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.2/lightgallery.min.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.2/plugins/thumbnail/lg-thumbnail.min.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.2/plugins/zoom/lg-zoom.min.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.2/plugins/video/lg-video.min.js"></script>
+
+<script src="non-math.js"></script>
+
+
+
+<script src="../site_libs/quarto-html/zenscroll-min.js"></script>
+</body></html>

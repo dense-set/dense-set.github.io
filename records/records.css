@@ -1,0 +1,13 @@
+.btn-container {
+    display: grid;
+    justify-items: center;
+      
+    a {
+        display: grid;
+        grid-template-columns: auto 1fr;
+        column-gap: 8px;
+        align-items: center;
+      }
+
+    margin-bottom: 17px;
+}

@@ -9,9 +9,7 @@ Activities that keep me engaged these days:
 1. Being an (informal) TA of (MA 629) Differential Geometry.
 2. Taking the following courses:
     i) (MA 637) Numerical Analysis
-    ii) (MA 642) Fourier Analysis on LCA Groups
-    iii) (MA 637) Matrix Analysis
-    iv) (HS 191-I) Mandarin
+    ii) (HS 191-I) Mandarin
 3. Doing my Master's project with Prof Gadadhar.
 4. Finalizing the notes of Functional Analysis and Algebraic Topology, two of the courses that I took the last semester.
 5. Extending this website.

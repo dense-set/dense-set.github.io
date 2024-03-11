@@ -48,7 +48,7 @@ The following are the courses that I have taken since my physics-to-math switch.
 | II  | Ordinary Differential Equations       | –                                                                                      | B-          |
 | III | Partial Differential Equations        | –                                                                                      | B-          |
 | III | Project in Mathematics                | (under [Gadadhar Misra](https://www.isibang.ac.in/~gm/){target="_blank"})              | A           |
-| I   | Computational Complexity Theory       | [Balagopal Komarath](https://bkomarath.rbgo.in/){target="_blank"}                      | A           |
+| I   | Computational Complexity Theory       | [Balagopal Komarath](https://bkomarath.rbgo.in/){target="_blank"}                      | B           |
 | III | French Studies                        | –                                                                                      | A           |
 | II  | Writing                               | –                                                                                      | A-          |
 
@@ -61,6 +61,6 @@ The following are the courses that I have taken since my physics-to-math switch.
 | NPTEL    | [An Introduction to Point-Set Topology: Part I](https://archive.nptel.ac.in/courses/111/101/111101158/){target="_blank"}                        | Anant Shastri, IIT Bombay                   | (only completed half of the course)                        |
 | NPTEL    | [Introduction to Rings and Fields](https://archive.nptel.ac.in/courses/111/106/111106131/){target="_blank"}                                     | Krishna Hanumanthu, IIT Madras              | (didn't take the exam)                                     |
 | NPTEL    | [Physics through Computational Thinking](https://nptel.ac.in/courses/115106121){target="_blank"}                                                | Auditya Sharma and Ambar Jain, IISER Bhopal | [Link](physics-through-computational.jpg){target="_blank"} |
-| edX      | [Italian Language and Culture: Beginner (2023-24)](https://learning.edx.org/course/course-v1:WellesleyX+Italian1x+1T2023/home){target="_blank"} | Daniela Bartalesi-Garf, Wellesley College    | [Link](italian-edx.pdf){target="_blank"}                   |
+| edX      | [Italian Language and Culture: Beginner (2023-24)](https://learning.edx.org/course/course-v1:WellesleyX+Italian1x+1T2023/home){target="_blank"} | Daniela Bartalesi-Garf, Wellesley College   | [Link](italian-edx.pdf){target="_blank"}                   |
 
 : {.table-hover .table}

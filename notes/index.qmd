@@ -5,9 +5,7 @@ tbl-colwidths: [30, 15, 55]
 ---
 
 <p class="quote">
-
 For meticulous documentation of the results is almost as important to me as the proofs of results themselves...
-
 </p>
 
 Here, you'll find the following kinds of docs:
@@ -54,6 +52,9 @@ Here, you'll find the following kinds of docs:
   </div>
 </div>
 ```
+
+<br>
+
 ## Courses
 
 Though the "Organized results" here often contain all the results proved in the lectures (including tutorials), these also occasionally contain the results that I prove independently, some of which I have highlighted in comments.

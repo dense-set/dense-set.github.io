@@ -8,7 +8,7 @@ format:
 
 ## Curriculum vitæ
 
-Last updated: December, 2023
+*Last updated: December, 2023*
 
 ```{=html}
     <div class="btn-container">

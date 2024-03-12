@@ -166,8 +166,8 @@ ul.task-list li input[type="checkbox"] {
 
 
 <p class="quote">
-</p><p>For meticulous documentation of the results is almost as important to me as the proofs of results themselves…</p>
-<p></p>
+For meticulous documentation of the results is almost as important to me as the proofs of results themselves…
+</p>
 <p>Here, you’ll find the following kinds of docs:</p>
 <div class="accordion" id="accordionExample">
   <div class="accordion-item">
@@ -209,6 +209,7 @@ ul.task-list li input[type="checkbox"] {
     </div>
   </div>
 </div>
+<p><br></p>
 <section id="courses" class="level2 page-columns page-full">
 <h2 class="anchored" data-anchor-id="courses">Courses</h2>
 <p>Though the “Organized results” here often contain all the results proved in the lectures (including tutorials), these also occasionally contain the results that I prove independently, some of which I have highlighted in comments.</p>
@@ -610,6 +611,24 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     // clear code selection
     e.clearSelection();
   });
+    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+    var mailtoRegex = new RegExp(/^mailto:/);
+      var filterRegex = new RegExp("?var:website\.site-url");
+    var isInternal = (href) => {
+        return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+    }
+    // Inspect non-navigation links and adorn them if external
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool)');
+    for (var i=0; i<links.length; i++) {
+      const link = links[i];
+      if (!isInternal(link.href)) {
+        // undo the damage that might have been done by quarto-nav.js in the case of
+        // links that we want to consider external
+        if (link.dataset.originalHref !== undefined) {
+          link.href = link.dataset.originalHref;
+        }
+      }
+    }
   function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
     const config = {
       allowHTML: true,
@@ -644,7 +663,11 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       try { href = new URL(href).hash; } catch {}
       const id = href.replace(/^#\/?/, "");
       const note = window.document.getElementById(id);
-      return note.innerHTML;
+      if (note) {
+        return note.innerHTML;
+      } else {
+        return "";
+      }
     });
   }
   const xrefs = window.document.querySelectorAll('a.quarto-xref');
@@ -925,7 +948,9 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 <p><span class="footer-block"><iconify-icon inline="" icon="fa-brands:creative-commons"></iconify-icon> 2024 Sarthak.</span> <span class="footer-block">All content licensed under<br> <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.en"><iconify-icon inline="" icon="fa-brands:creative-commons"></iconify-icon> <iconify-icon inline="" icon="fa-brands:creative-commons-by"></iconify-icon> <iconify-icon inline="" icon="fa-brands:creative-commons-nc"></iconify-icon> <iconify-icon inline="" icon="fa-brands:creative-commons-sa"></iconify-icon> CC BY-NC-SA 4.0</a>.</span></p>
 </div>   
     <div class="nav-footer-center">
-<p><em>Be a hero,<br> or a villain even!;<br> only never just a mere prop.</em></p>
+<p><em>Be a hero,<br>
+or a villain even!;<br>
+only never just a mere prop.</em></p>
 </div>
     <div class="nav-footer-right">
 <p><span class="footer-block">Made with <a href="https://quarto.org/">Quarto</a>.</span> <span class="footer-block">View the source code on <a href="https://github.com/dense-set/dense-set.github.io">GitHub <iconify-icon inline="" icon="fa-brands:github"></iconify-icon></a>.</span></p>

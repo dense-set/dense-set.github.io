@@ -18,6 +18,7 @@ website:
   repo-url: "{{< var website.repo-url >}}"
 
   search: false
+  google-analytics: "G-10MN4G7N17"
 
   navbar:
     left:

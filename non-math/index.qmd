@@ -283,10 +283,6 @@ The place where I found what I love.
       <img src="creations/rangoli-0.jpg" alt="rangoli">
     </a>
 
-    <a href="creations/birthday-kashish.jpg" data-sub-html="A birthday pop-up">
-      <img src="creations/birthday-kashish.jpg" alt="birthday">
-    </a>
-
   </div>
 ```
 ## On the keys

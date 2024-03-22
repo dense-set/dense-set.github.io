@@ -2,11 +2,11 @@
 title: Now
 ---
 
-*Last updated: January 2024*
+*Last updated: March 2024*
 
 Activities that keep me engaged these days:
 
-1. Being an (informal) TA of (MA 629) Differential Geometry.
+1. <s>Being an (informal) TA of (MA 629) Differential Geometry.</s> (no more)
 2. Taking the following courses:
     i) (MA 637) Numerical Analysis
     ii) (HS 191-I) Mandarin

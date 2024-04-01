@@ -1,0 +1,16 @@
+::: {.hidden}
+$$
+\newcommand{\iprd}[1]{\langle#1\rangle}
+\newcommand{\norm}[1]{\|#1\|}
+
+\newcommand{\which}[1]{\stackrel{\text{\scriptsize w}}{#1}}
+\newcommand{\wimplies}{\which\implies}
+\renewcommand{\Re}{\operatorname{Re}}
+\renewcommand{\Im}{\operatorname{Im}}
+
+\newcommand{\LHS}{\text{LHS}\xspace}
+\newcommand{\RHS}{\text{RHS}\xspace}
+
+\newcommand{\mathcorr}[1]{{\color{YellowOrange}{#1}}}
+$$
+:::

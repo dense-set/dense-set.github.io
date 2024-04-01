@@ -1,4 +1,4 @@
-p {
+p:not(footer p, .column-margin p) {
     text-align: justify;
 }
 
@@ -24,4 +24,41 @@ p.quote {
 // top margin 3em for smaller screeens
 .nav-footer-center {
     margin-top: 0;
+}
+
+
+.rslt {
+    border: 1px solid;
+    border-radius: 2px;
+    margin-bottom: 1em;
+
+    p {
+        //margin-bottom: 0pt;
+        margin-left: 1em;
+        margin-right: 1em;
+        margin-top: 0.5em;
+    }
+}
+
+
+.proof {
+    font-size: 0.9rem;
+    margin-left: 2em;
+    margin-right: 2em;
+
+    p:last-child:after{
+        content: "\2610"; float:right;
+    }
+}
+
+[id^="exr-"] {
+    font-style: italic;
+
+    .theorem-title {
+        font-style: normal;
+    }
+}
+ 
+.textcorr {
+    color: rgb(250, 162, 26);
 }

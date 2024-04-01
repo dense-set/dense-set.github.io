@@ -9,7 +9,7 @@
 <meta name="author" content="Sarthak">
 <meta name="description" content="Personal website for Sarthak">
 
-<title>Non-math | dense set</title>
+<title>?meta:title | dense set</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -25,21 +25,21 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="../site_libs/quarto-nav/headroom.min.js"></script>
-<script src="../site_libs/clipboard/clipboard.min.js"></script>
-<script src="../site_libs/quarto-html/quarto.js"></script>
-<script src="../site_libs/quarto-html/popper.min.js"></script>
-<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="../site_libs/quarto-html/anchor.min.js"></script>
-<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-dark.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
-<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="../site_libs/bootstrap/bootstrap-dark.min.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
-<script src="../site_libs/quarto-contrib/iconify-1.0.0-beta.2/iconify-icon.min.js"></script>
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-html/quarto.js"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-dark.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-dark.min.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<script src="../../site_libs/quarto-contrib/iconify-1.0.0-beta.2/iconify-icon.min.js"></script>
 <script id="quarto-search-options" type="application/json">{
   "language": {
     "search-no-results-text": "No results",
@@ -65,30 +65,48 @@ gtag('js', new Date());
 gtag('config', 'G-10MN4G7N17', { 'anonymize_ip': true});
 </script>
 <style>html{ scroll-behavior: smooth; }</style>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/justifiedGallery/3.8.1/css/justifiedGallery.min.css">
 
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.2/css/lightgallery.min.css">
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
 
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.2/css/lg-thumbnail.min.css">
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.2/css/lg-zoom.min.css">
-
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.2/css/lg-video.min.css">
-
-<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
-
-
-<link rel="stylesheet" href="../common.css">
+<link rel="stylesheet" href="../../common.css">
 </head>
 
-<body class="nav-fixed">
+<body class="nav-fixed fullcontent">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top quarto-banner">
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a class="navbar-brand" href="../index.html">
+    <a class="navbar-brand" href="../../index.html">
     <span class="navbar-title">dense set</span>
     </a>
   </div>
@@ -98,23 +116,23 @@ gtag('config', 'G-10MN4G7N17', { 'anonymize_ip': true});
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link" href="../records/index.html"> 
+    <a class="nav-link" href="../../records/index.html"> 
 <span class="menu-text">Records</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../notes/index.html"> 
+    <a class="nav-link" href="../../notes/index.html"> 
 <span class="menu-text">Notes</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../blog/index.html"> 
+    <a class="nav-link" href="../../blog/index.html"> 
 <span class="menu-text">Blog</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link active" href="../non-math/index.html" aria-current="page"> 
+    <a class="nav-link" href="../../non-math/index.html"> 
 <span class="menu-text">Non-math</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../now/index.html"> 
+    <a class="nav-link" href="../../now/index.html"> 
 <span class="menu-text">Now</span></a>
   </li>  
 </ul>
@@ -148,308 +166,36 @@ gtag('config', 'G-10MN4G7N17', { 'anonymize_ip': true});
     </nav>
 </header>
 <!-- content -->
-<header id="title-block-header" class="quarto-title-block default page-columns page-full">
-  <div class="quarto-title-banner page-columns page-full">
-    <div class="quarto-title column-body">
-      <h1 class="title">Non-math</h1>
-                      </div>
-  </div>
-    
-  
-  <div class="quarto-title-meta">
-
-      
-    
-      
-    </div>
-    
-  
-  </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        <nav id="TOC" role="doc-toc" class="toc-active">
-    <h2 id="toc-title">On this page</h2>
-   
-  <ul>
-  <li><a href="#alwar" id="toc-alwar" class="nav-link active" data-scroll-target="#alwar">Alwar</a></li>
-  <li><a href="#st.-stephens" id="toc-st.-stephens" class="nav-link" data-scroll-target="#st.-stephens">St.&nbsp;Stephen’s</a></li>
-  <li><a href="#iit-gandhinagar" id="toc-iit-gandhinagar" class="nav-link" data-scroll-target="#iit-gandhinagar">IIT Gandhinagar</a></li>
-  <li><a href="#creations" id="toc-creations" class="nav-link" data-scroll-target="#creations">Creations</a></li>
-  <li><a href="#on-the-keys" id="toc-on-the-keys" class="nav-link" data-scroll-target="#on-the-keys">On the keys</a></li>
-  </ul>
-</nav>
-    </div>
+    
 <!-- main -->
 <main class="content quarto-banner-title-block" id="quarto-document-content">
 
 
 
 
-
-<p class="quote">
-Glimpses of my (meagre) non-mathematical life…
-</p>
-  <div id="gallery-unfiled">
-
-    <a href="pigeons-flying.jpg" data-sub-html="Clicked on a school trip">
-      <img src="pigeons-flying.jpg" alt="pigeons flying">
-    </a>
-
-    <a href="elphie-5.jpg" data-sub-html="She was with me for a while, I called her <em>Elphie</em>...">
-    <img src="elphie-5.jpg" alt="elphie">
-    </a>
-    
-    <a href="my-jewels.jpg" data-sub-html="I collect beautiful things!">
-      <img src="my-jewels.jpg" alt="my jewels">
-    </a>
-
-    <a href="cat-0.jpg" data-sub-html="A friendly cat I found in NIUS">
-      <img src="cat-0.jpg" alt="a cat">
-    </a>
-
-    <a href="diyas.jpg" data-sub-html="About to be taken to the temple by <em>Maa</em> and <em>Amma</em>">
-      <img src="diyas.jpg" alt="diwali diyas">
-    </a>
-    
-    <a href="nice-click.jpg" data-sub-html="Clicked on a school trip">
-      <img src="nice-click.jpg" alt="landscape">
-    </a>
-    
-    <a href="cat-1.jpg" data-sub-html="My feline friends at the Delhi apartment">
-      <img src="cat-1.jpg" alt="two cats">
-    </a>
-
-    <a href="solar-eclipse.jpg" data-sub-html="Solar eclipse from our Alwar home">
-      <img src="solar-eclipse.jpg" alt="solar eclipse">
-    </a>
-
-    <a href="elphie-4.jpg" data-sub-html="Elphie trying to make sense of her daddy's chem books">
-      <img src="elphie-4.jpg" alt="elphie">
-    </a>
-
-  </div>
-<p>
-</p>
-<section id="alwar" class="level2">
-<h2 class="anchored" data-anchor-id="alwar">Alwar</h2>
-<p>Nestled among the Aravali range in Rajasthan sits my hometown Alwar.</p>
-  <div id="gallery-alwar">
-    
-    <a href="alwar/clouds.jpg" data-sub-html="Clouds with silver linings">
-      <img src="alwar/clouds.jpg" alt="clouds">
-    </a>
-
-    <a href="alwar/fire.jpg" data-sub-html="<em>Holika dahan</em> in our community park">
-      <img src="alwar/fire.jpg" alt="fire">
-    </a>
-
-    <a href="alwar/mountains-1.jpg" data-sub-html="Mountains from our roof">
-      <img src="alwar/mountains-1.jpg" alt="mountains">
-    </a>
-
-    <a href="alwar/mountains-2.jpg" data-sub-html="Our neighborhood against the Aravalis">
-      <img src="alwar/mountains-2.jpg" alt="mountains">
-    </a>
-
-    <a href="alwar/sunrise.jpg" data-sub-html="Sunrise from <em>Mooti Doongri</em>">
-      <img src="alwar/sunrise.jpg" alt="sunrise">
-    </a>
-
-    <a href="alwar/sunset.jpg" data-sub-html="A calm sunset from our roof">
-      <img src="alwar/sunset.jpg" alt="sunset">
-    </a>
-
-    <a href="alwar/dark-clouds.jpg" data-sub-html="Looks like it's gonna rain">
-      <img src="alwar/dark-clouds.jpg" alt="dark clouds">
-    </a>
-
-    <a href="alwar/rainbow.jpg" data-sub-html="Rainbow after a shower">
-      <img src="alwar/rainbow.jpg" alt="rainbow">
-    </a>
-
-  </div>
-</section>
-<section id="st.-stephens" class="level2">
-<h2 class="anchored" data-anchor-id="st.-stephens">St.&nbsp;Stephen’s</h2>
-<p>The place where I found what I love.</p>
-  <div id="gallery-stephens">
-
-    <a href="stephens/balcony-in.jpg" data-sub-html="The first floor of the main building">
-      <img src="stephens/balcony-in.jpg" alt="inside balcony">
-    </a>
-    
-    <a href="stephens/balcony-out.jpg" data-sub-html="From the balcony">
-      <img src="stephens/balcony-out.jpg" alt="from the balcony">
-    </a>
-
-    <a href="stephens/convo-0.jpg" data-sub-html="The Doctor graduating me">
-      <img src="stephens/convo-0.jpg" alt="convocation">
-    </a>
-
-    <a href="stephens/convo-2.jpg" data-sub-html="With my Physics dept">
-      <img src="stephens/convo-2.jpg" alt="convocation">
-    </a>
-
-    <a href="stephens/monsoon.jpg" data-sub-html="The science lawns in monsoon">
-      <img src="stephens/monsoon.jpg" alt="monsoon">
-    </a>
-
-    <a href="stephens/nplt.jpg" data-sub-html="Inside NPLT">
-      <img src="stephens/nplt.jpg" alt="nplt">
-    </a>
-
-    <a href="stephens/science-block-entrance.jpg" data-sub-html="Canopied corridor of the Physics dept">
-      <img src="stephens/science-block-entrance.jpg" alt="science block entrance">
-    </a>
-
-    <a href="stephens/science-block-lawn.jpg" data-sub-html="The science block lawns">
-      <img src="stephens/science-block-lawn.jpg" alt="science block lawn">
-    </a>
-
-    <a href="stephens/staircase.jpg" data-sub-html="The staircase in the main buolding">
-      <img src="stephens/staircase.jpg" alt="staircase">
-    </a>
-
-  </div>
-</section>
-<section id="iit-gandhinagar" class="level2">
-<h2 class="anchored" data-anchor-id="iit-gandhinagar">IIT Gandhinagar</h2>
-  <div id="gallery-iitgn">
-
-    <a href="iitgn/beetle.jpg" data-sub-html="A beetle outside AB5 study room">
-      <img src="iitgn/beetle.jpg" alt="beetle">
-    </a>
-
-    <a href="iitgn/hostel-path-0.jpg" data-sub-html="A pathway through the hostel area">
-      <img src="iitgn/hostel-path-0.jpg" alt="a pathway">
-    </a>
-
-    <a href="iitgn/hostel-path-1.jpg" data-sub-html="Around the hostels at night">
-      <img src="iitgn/hostel-path-1.jpg" alt="a pathway">
-    </a>
-
-    <a href="iitgn/lal-minar-0.jpg" data-sub-html="<em>Lal Minar</em>">
-      <img src="iitgn/lal-minar-0.jpg" alt="lal minar">
-    </a>
-
-    <a href="iitgn/lal-minar-1.jpg" data-sub-html="<em>Lal minar</em> through thorns">
-      <img src="iitgn/lal-minar-1.jpg" alt="lal minar">
-    </a>
-
-    <a href="iitgn/lamp.jpg" data-sub-html="A lamp through the trees at night">
-      <img src="iitgn/lamp.jpg" alt="a lamp">
-    </a>
-
-    <a href="iitgn/mantis.jpg" data-sub-html="A mantis in Firpeal">
-      <img src="iitgn/mantis.jpg" alt="mantis">
-    </a>
-
-    <a href="iitgn/mongoose.jpg" data-sub-html="A mongoose in morning">
-      <img src="iitgn/mongoose.jpg" alt="mongoose">
-    </a>
-
-    <a href="iitgn/room.jpg" data-sub-html="My hostel room">
-      <img src="iitgn/room.jpg" alt="my room">
-    </a>
-
-    <a href="iitgn/solar-panel.jpg" data-sub-html="The solar pathway">
-      <img src="iitgn/solar-panel.jpg" alt="solar path">
-    </a>
-
-    <a href="iitgn/summer-flies.jpg" data-sub-html="Tiny flies during summer">
-      <img src="iitgn/summer-flies.jpg" alt="summer flies">
-    </a>
-
-    <a href="iitgn/sunflowers.jpg" data-sub-html="Sunflowers">
-      <img src="iitgn/sunflowers.jpg" alt="sunflowers">
-    </a>
-
-    <a href="iitgn/trees-0.jpg" data-sub-html="Trees">
-      <img src="iitgn/trees-0.jpg" alt="trees">
-    </a>
-
-    <a href="iitgn/trees-1.jpg" data-sub-html="Photgenic landscape">
-      <img src="iitgn/trees-1.jpg" alt="landscape">
-    </a>
-
-  </div>
-</section>
-<section id="creations" class="level2">
-<h2 class="anchored" data-anchor-id="creations">Creations</h2>
-  <div id="gallery-creations">
-
-    <a href="creations/rangoli-2.jpg" data-sub-html="<em>Diwali ki rangoli</em>">
-      <img src="creations/rangoli-2.jpg" alt="rangoli">
-    </a>
-    
-    <a href="creations/crochet-0.jpg" data-sub-html="A crochet doily">
-      <img src="creations/crochet-0.jpg" alt="crochet">
-    </a>
-
-    <a href="creations/cube.jpg" data-sub-html="From my fine arts dossier">
-      <img src="creations/cube.jpg" alt="still-life">
-    </a>
-
-    <a href="creations/crochet-1.jpg" data-sub-html="Finest crochet doily I have done so far">
-      <img src="creations/crochet-1.jpg" alt="crochet">
-    </a>
-
-    <a href="creations/flower.jpg" data-sub-html="From my fine arts dossier">
-      <img src="creations/flower.jpg" alt="flower">
-    </a>
-
-    <a href="creations/dodecahedron.jpeg" data-sub-html="Origami dodecahedron">
-      <img src="creations/dodecahedron.jpeg" alt="dodecahedron">
-    </a>
-
-    <a href="creations/rangoli-1.jpg" data-sub-html="<em>Diwali ki rangoli</em>">
-      <img src="creations/rangoli-1.jpg" alt="rangoli">
-    </a>
-
-    <a href="creations/crochet-3.jpg" data-sub-html="A crochet doily">
-      <img src="creations/crochet-3.jpg" alt="crochet">
-    </a>
-
-    <a href="creations/poster.jpg" data-sub-html="A poster I made in highschool">
-      <img src="creations/poster.jpg" alt="poster">
-    </a>
-
-    <a href="creations/crochet-4.jpg" data-sub-html="My first crochet doily">
-      <img src="creations/crochet-4.jpg" alt="crochet">
-    </a>
-
-    <a href="creations/rangoli-0.jpg" data-sub-html="<em>Diwali ki rangoli</em>">
-      <img src="creations/rangoli-0.jpg" alt="rangoli">
-    </a>
-
-  </div>
-</section>
-<section id="on-the-keys" class="level2">
-<h2 class="anchored" data-anchor-id="on-the-keys">On the keys</h2>
-<p>Warning: Listen at your own risk. XD</p>
-  <div id="gallery-piano">
-
-    <a data-src="https://vimeo.com/900953943?share=copy" data-sub-html="<em>&quot;It's young Bach, he dedicated it to his brother.&quot;</em>">
-    <img src="piano/bach.jpg" alt="bach">
-    </a>
-
-    <a data-src="https://youtu.be/pE7A7hAUlBQ" data-sub-html="Easy On Me">
-    <img src="piano/easy-on-me.jpg" alt="easy on me">
-    </a>
-
-    <a data-src="https://youtu.be/rjTxQOpaWOk" data-sub-html="<em>&quot;Hello, it's me&quot;">
-    <img src="piano/hello.jpg" alt="hello">
-    </a>
-
-    <a data-src="https://vimeo.com/900953899?share=copy" data-sub-html="Make You Feel My Love">
-    <img src="piano/make-you-feel-my-love.jpg" alt="make you feel my love">
-    </a>
-
-  </div>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+A solution
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p><span class="math display">\[\begin{align*}
+        I(\theta) \sum_{k\in D} (g(k) - \theta)^2 p(k, \theta)
+        &amp; \ge \biggl(\sum_k p_\theta(k, \theta) (g(k) - \theta)\biggr)^2\\
+        &amp; = \biggl(1 - \theta\sum_k p_\theta(k, \theta)\biggr)^2\\
+        &amp; = 1
+    \end{align*}\]</span> Here, the equalities follow by respectively differentiating <span class="math inline">\(\sum_k g(k) p(k, \theta) = \theta\)</span> and <span class="math inline">\(\sum_k p(k, \theta) = 1\)</span> with respect to <span class="math inline">\(\theta\)</span>.</p>
+</div>
+</div>
 
 
-</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
@@ -1023,33 +769,8 @@ only never just a mere prop.</em></p>
 </footer>
 <script src="light-dark-modes.js"></script>
 
-<script>
-MathJax = {
-  tex: {
-    inlineMath: [['$', '$'], ['\\(', '\\)']]
-  },
-  svg: {
-    fontCache: 'global'
-  }
-};
-</script>
-<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
-<script id="MathJax-script" async="" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
-</script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/justifiedGallery/3.8.1/js/jquery.justifiedGallery.min.js"></script>
-
-<script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.2/lightgallery.min.js"></script>
-
-<script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.2/plugins/thumbnail/lg-thumbnail.min.js"></script>
-
-<script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.2/plugins/zoom/lg-zoom.min.js"></script>
-
-<script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.2/plugins/video/lg-video.min.js"></script>
-
-<script src="non-math.js"></script>
 
 
 
-
-<script src="../site_libs/quarto-html/zenscroll-min.js"></script>
+<script src="../../site_libs/quarto-html/zenscroll-min.js"></script>
 </body></html>

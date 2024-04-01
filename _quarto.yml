@@ -24,9 +24,11 @@ website:
     left:
       - text: Records
         href: records/index.qmd
-      - text: Notes # only math notes
+      - text: Notes
         href: notes/index.qmd
-      - text: Non-math # hobbies + physics stuff
+      - text: Blog
+        href: blog/index.qmd
+      - text: Non-math
         href: non-math/index.qmd
       - text: Now
         href: now/index.qmd
@@ -89,8 +91,8 @@ author-meta: "{{< var website.author >}}"
 format:
   html:
     theme:
-      dark: [darkly, custom-dark.scss]
-      light: [flatly, custom-light.scss]
+      dark: [darkly, _custom-dark.scss]
+      light: [flatly, _custom-light.scss]
     
     css: common.css
     toc: false
@@ -98,21 +100,6 @@ format:
     include-after-body: 
       - text: |
           <script src="light-dark-modes.js"></script>
-
-          <script>
-          MathJax = {
-            tex: {
-              inlineMath: [['$', '$'], ['\\(', '\\)']]
-            },
-            svg: {
-              fontCache: 'global'
-            }
-          };
-          </script>
-          <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
-          <script id="MathJax-script" async
-                  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
-          </script>
 
     anchor-sections: true
 

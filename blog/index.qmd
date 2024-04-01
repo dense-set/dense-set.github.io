@@ -1,0 +1,11 @@
+---
+title: "Blog"
+listing:
+  contents: steele-csmc
+  sort: "date desc"
+  type: default
+  # categories: true
+  # sort-ui: true
+  # filter-ui: true
+title-block-banner: true
+---

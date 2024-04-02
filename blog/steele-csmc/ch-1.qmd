@@ -33,7 +33,6 @@ We start with an *inductive* proof of the following version of Cauchy's inequali
 :::
 
 :::{.proof}
-  *Proof.*
   For $n = 1$, we have equality. Let's check the $n = 2$ case, which will also be used in the inductive step. We have the following chain of equivalent statements:
   \begin{align*}
     (a_1 b_1 + a_2 b_2)^2 & \le (a_1^2 + a_2^2) (b_1^2 + b_2^2)\\
@@ -155,9 +154,9 @@ The popular quick proof involving the quadratic polynomial is due to Schwarz (se
 :::{#exr-3}
 ### Why not three or more?
   For reals $a_i, b_i, c_i$'s for $i = 1, \ldots, n$, one has:
-
-  1. $\sum_i a_i b_i c_i\le \bigl( \sum_i a_i^2 \bigr)^{1/2} \bigl( \sum_i b_i^4 \bigr)^{1/4} \bigl( \sum_i c_i^4 \bigr)^{1/4}$
-  2. $\sum_i a_i b_i c_i\le \sqrt{\sum_i a_i^2}\, \sqrt{\sum_i b_i^2} \, \sqrt{\sum_i c_i^2}$
+	\begin{equation*}
+		\sum_i a_i b_i c_i\le \sqrt{\sum_i a_i^2}\, \sqrt{\sum_i b_i^2} \, \sqrt{\sum_i c_i^2}.
+	\end{equation*}
 :::
 
 :::{.callout-note}
@@ -167,7 +166,14 @@ The popular quick proof involving the quadratic polynomial is due to Schwarz (se
 
 :::{.callout-tip collapse="true"}
 #### A solution
-  We have $\bigl( \sum_i a_i b_i c_i \bigr)^4$ $\le$ $\bigl( \sum_i a_i^2 \bigr)^2  \bigl( \sum_i b_i^2 c_i^2 \bigr)^2$	$\le$ $\bigl( \sum_i a_i^2 \bigr)^2  \bigl( \sum_i b_i^4 \bigr)  \bigl( \sum_i c_i^4 \bigr)$ $\le$ $\bigl( \sum_i a_i^2 \bigr)^2  \bigl( \sum_i b_i^2 \bigr)^2 \bigl( \sum_i c_i^2 \bigr)^2$ where the last inequality follows because $\sum_i \alpha_i^2\le (\sum_i \alpha_i)^2$ for any $\alpha_1, \ldots, \alpha_n\ge 0$.
+  We have 
+	\begin{align*}
+		\biggl(\sum_i a_i b_i c_i\biggr)^2
+		& \le \biggl( \sum_i a_i^2 \biggr)^2  \biggl( \sum_i b_i^2 c_i^2 \biggr)^2\\
+		& \le \biggl( \sum_i a_i^2 \biggr)^2  \biggl( \sum_i b_i^4 \biggr)  \biggl( \sum_i c_i^4 \biggr)\\
+		& \le \biggl( \sum_i a_i^2 \biggr)^2  \biggl( \sum_i b_i^2 \biggr)^2 \biggl( \sum_i c_i^2 \biggr)^2
+	\end{align*}
+ 	where the last inequality follows because $\sum_i \alpha_i^2\le (\sum_i \alpha_i)^2$ for any $\alpha_1, \ldots, \alpha_n\ge 0$.
 :::
 
 <!-- --------- -->
@@ -214,7 +220,14 @@ The popular quick proof involving the quadratic polynomial is due to Schwarz (se
 
 :::{.callout-tip collapse="true"}
 #### A solution 
-  This is equivalent to showing that $n\sum_i (p_i + 1/p_i)^2\ge (n^2 + 1)^2$. Indeed, $n\sum_i (p_i + 1/p_i)^2\ge \bigl(\sum_i (p_i +1/p_i)\bigr)^2\which=(1 + \sum_i 1/p_i)^2\which\ge (1 + n^2)^2$, where the last inequality follows from @lem-1_over_p_sq below. For equality, "$\Leftarrow$" is clear. For the converse, note that all the inequalities must be equalities so that $p_i + 1/p_i$ is independent of $i$ which implies that $p_i$'s are all equal.
+  This is equivalent to showing that $n\sum_i (p_i + 1/p_i)^2\ge (n^2 + 1)^2$. Indeed, 
+	\begin{align*}
+		n\sum_i (p_i + 1/p_i)^2
+		& \ge \biggl(\sum_i (p_i +1/p_i)\biggr)^2\\
+		& = \biggl(1 + \sum_i 1/p_i\biggr)^2\\
+		& \ge (1 + n^2)^2
+	\end{align*}
+	where the last inequality follows from @lem-1_over_p_sq below. For equality, "$\Leftarrow$" is clear. For the converse, note that all the inequalities must be equalities so that $p_i + 1/p_i$ is independent of $i$ which implies that $p_i$'s are all equal.
 :::
 
 :::{#lem-1_over_p_sq .rslt}
@@ -277,10 +290,10 @@ The popular quick proof involving the quadratic polynomial is due to Schwarz (se
 #### A solution 
   These follow from the following:
 
-  1. $\sum_{i = 0}^n x^{2i} = (1 - x^{2(n + 1)})/(1 - x^2)\le 1/(1 - x^2)$ (since $|x| < 1$).
-  2. $\sum_{i = 1}^n 1/i^2 \le 1 + \sum_{i = 2}^n \frac{1}{(i - 1)i} = 2 - 1/n\le 2$.
-  3. $\sum_{i = 1}^n 1/(n + i)\le \int_0^n 1/(n + x) = \sqrt 2$.  
-  4. $\sum_{i = 0}^n \binom{n}{i}^2 = \sum_{i = 0}^n \binom{n}{i}\binom{n}{n - i} = \binom{2n}{n}$ where the last equality follows by noting that choosing $n$ objects out of $2n$ is equivalent to first dividing them into two groups of $n$ each and then choosing from among those groups.
+  1. $\sum_{i = 0}^n x^{2i} = (1 - x^{2(n + 1)})/(1 - x^2)$ ${}\le 1/(1 - x^2)$ (since $|x| < 1$).
+  2. $\sum_{i = 1}^n 1/i^2 \le 1 + \sum_{i = 2}^n \frac{1}{(i - 1)i}$ ${}= 2 - 1/n\le 2$.
+  3. $\sum_{i = 1}^n 1/(n + i)\le \int_0^n 1/(n + x)$ ${}= \sqrt 2$.  
+  4. $\sum_{i = 0}^n \binom{n}{i}^2 = \sum_{i = 0}^n \binom{n}{i}\binom{n}{n - i}$ ${}= \binom{2n}{n}$ where the last equality follows by noting that choosing $n$ objects out of $2n$ is equivalent to first dividing them into two groups of $n$ each and then choosing from among those groups.
 :::
 
 <!-- -------- -->
@@ -471,4 +484,4 @@ The popular quick proof involving the quadratic polynomial is due to Schwarz (se
 
 1. p. 11: "<s>binomial</s> <span class="textcorr">quadratic</span> formula" in the third paragraph.
 2. p. 17: $\Theta$ must be given to be an appropriate set since differentiability is being talked of. For instance, $\Theta$ may be taken to be an interval.
-3. p. 228: In the solution to Ex 7, "$\iprd{x, y} = 5x_1 y_1 + x_1 y_2 + x_2 y_1 + \cancel{3y_2^2} \mathcorr{3x_2 y_2}$" and "$5z^2 + \cancel{3z}\mathcorr{2z} + 3 = 0$".
+3. p. 228: In the solution to Ex 7, $\text{``}\iprd{x, y} = 5x_1 y_1 + x_1 y_2 + x_2 y_1$ ${}+ \cancel{3y_2^2} \mathcorr{3x_2 y_2}\text{"}$ and $\text{``}5z^2 + \cancel{3z}\mathcorr{2z} + 3 =0\text{"}$.

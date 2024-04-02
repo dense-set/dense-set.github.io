@@ -100,6 +100,7 @@ format:
     include-after-body: 
       - text: |
           <script src="light-dark-modes.js"></script>
+          <script src="mathjax.js"></script>
 
     anchor-sections: true
 

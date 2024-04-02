@@ -52,4 +52,9 @@ p.quote {
 
 .textcorr {
   color: rgb(250, 162, 26);
+}
+
+mjx-container[display=true] {
+  overflow-x: auto;
+  overflow-y: hidden;
 }/*# sourceMappingURL=common.css.map */

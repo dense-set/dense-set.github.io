@@ -236,7 +236,7 @@ $$
   \end{equation*}\]</span></p>
 </div>
 <div class="proof">
-<p><span class="proof-title"><em>Proof</em>. </span><em>Proof.</em> For <span class="math inline">\(n = 1\)</span>, we have equality. Let’s check the <span class="math inline">\(n = 2\)</span> case, which will also be used in the inductive step. We have the following chain of equivalent statements: <span class="math display">\[\begin{align*}
+<p><span class="proof-title"><em>Proof</em>. </span>For <span class="math inline">\(n = 1\)</span>, we have equality. Let’s check the <span class="math inline">\(n = 2\)</span> case, which will also be used in the inductive step. We have the following chain of equivalent statements: <span class="math display">\[\begin{align*}
     (a_1 b_1 + a_2 b_2)^2 &amp; \le (a_1^2 + a_2^2) (b_1^2 + b_2^2)\\
     2a_1 b_1 a_2 b_2 &amp; \le a_1^2 b_2^2 + a_2^2 b_1^2\\
     0 &amp; \le (a_1 b_2 - a_2 b_1)^2
@@ -337,11 +337,9 @@ A solution
 </div>
 <!-- ----------- -->
 <div id="exr-3" class="theorem exercise">
-<p><span class="theorem-title"><strong>Exercise 3 (Why not three or more?)</strong></span> For reals <span class="math inline">\(a_i, b_i, c_i\)</span>’s for <span class="math inline">\(i = 1, \ldots, n\)</span>, one has:</p>
-<ol type="1">
-<li><span class="math inline">\(\sum_i a_i b_i c_i\le \bigl( \sum_i a_i^2 \bigr)^{1/2} \bigl( \sum_i b_i^4 \bigr)^{1/4} \bigl( \sum_i c_i^4 \bigr)^{1/4}\)</span></li>
-<li><span class="math inline">\(\sum_i a_i b_i c_i\le \sqrt{\sum_i a_i^2}\, \sqrt{\sum_i b_i^2} \, \sqrt{\sum_i c_i^2}\)</span></li>
-</ol>
+<p><span class="theorem-title"><strong>Exercise 3 (Why not three or more?)</strong></span> For reals <span class="math inline">\(a_i, b_i, c_i\)</span>’s for <span class="math inline">\(i = 1, \ldots, n\)</span>, one has: <span class="math display">\[\begin{equation*}
+        \sum_i a_i b_i c_i\le \sqrt{\sum_i a_i^2}\, \sqrt{\sum_i b_i^2} \, \sqrt{\sum_i c_i^2}.
+    \end{equation*}\]</span></p>
 </div>
 <div class="callout callout-style-default callout-note no-icon callout-titled">
 <div class="callout-header d-flex align-content-center">
@@ -368,7 +366,12 @@ A solution
 </div>
 <div id="callout-4" class="callout-4-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
-<p>We have <span class="math inline">\(\bigl( \sum_i a_i b_i c_i \bigr)^4\)</span> <span class="math inline">\(\le\)</span> <span class="math inline">\(\bigl( \sum_i a_i^2 \bigr)^2  \bigl( \sum_i b_i^2 c_i^2 \bigr)^2\)</span> <span class="math inline">\(\le\)</span> <span class="math inline">\(\bigl( \sum_i a_i^2 \bigr)^2  \bigl( \sum_i b_i^4 \bigr)  \bigl( \sum_i c_i^4 \bigr)\)</span> <span class="math inline">\(\le\)</span> <span class="math inline">\(\bigl( \sum_i a_i^2 \bigr)^2  \bigl( \sum_i b_i^2 \bigr)^2 \bigl( \sum_i c_i^2 \bigr)^2\)</span> where the last inequality follows because <span class="math inline">\(\sum_i \alpha_i^2\le (\sum_i \alpha_i)^2\)</span> for any <span class="math inline">\(\alpha_1, \ldots, \alpha_n\ge 0\)</span>.</p>
+<p>We have <span class="math display">\[\begin{align*}
+        \biggl(\sum_i a_i b_i c_i\biggr)^2
+        &amp; \le \biggl( \sum_i a_i^2 \biggr)^2  \biggl( \sum_i b_i^2 c_i^2 \biggr)^2\\
+        &amp; \le \biggl( \sum_i a_i^2 \biggr)^2  \biggl( \sum_i b_i^4 \biggr)  \biggl( \sum_i c_i^4 \biggr)\\
+        &amp; \le \biggl( \sum_i a_i^2 \biggr)^2  \biggl( \sum_i b_i^2 \biggr)^2 \biggl( \sum_i c_i^2 \biggr)^2
+    \end{align*}\]</span> where the last inequality follows because <span class="math inline">\(\sum_i \alpha_i^2\le (\sum_i \alpha_i)^2\)</span> for any <span class="math inline">\(\alpha_1, \ldots, \alpha_n\ge 0\)</span>.</p>
 </div>
 </div>
 </div>
@@ -435,7 +438,12 @@ A solution
 </div>
 <div id="callout-7" class="callout-7-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
-<p>This is equivalent to showing that <span class="math inline">\(n\sum_i (p_i + 1/p_i)^2\ge (n^2 + 1)^2\)</span>. Indeed, <span class="math inline">\(n\sum_i (p_i + 1/p_i)^2\ge \bigl(\sum_i (p_i +1/p_i)\bigr)^2\stackrel{\text{\scriptsize w}}{=}(1 + \sum_i 1/p_i)^2\stackrel{\text{\scriptsize w}}{\ge }(1 + n^2)^2\)</span>, where the last inequality follows from <a href="#lem-1_over_p_sq" class="quarto-xref">Lemma&nbsp;1</a> below. For equality, “<span class="math inline">\(\Leftarrow\)</span>” is clear. For the converse, note that all the inequalities must be equalities so that <span class="math inline">\(p_i + 1/p_i\)</span> is independent of <span class="math inline">\(i\)</span> which implies that <span class="math inline">\(p_i\)</span>’s are all equal.</p>
+<p>This is equivalent to showing that <span class="math inline">\(n\sum_i (p_i + 1/p_i)^2\ge (n^2 + 1)^2\)</span>. Indeed, <span class="math display">\[\begin{align*}
+        n\sum_i (p_i + 1/p_i)^2
+        &amp; \ge \biggl(\sum_i (p_i +1/p_i)\biggr)^2\\
+        &amp; = \biggl(1 + \sum_i 1/p_i\biggr)^2\\
+        &amp; \ge (1 + n^2)^2
+    \end{align*}\]</span> where the last inequality follows from <a href="#lem-1_over_p_sq" class="quarto-xref">Lemma&nbsp;1</a> below. For equality, “<span class="math inline">\(\Leftarrow\)</span>” is clear. For the converse, note that all the inequalities must be equalities so that <span class="math inline">\(p_i + 1/p_i\)</span> is independent of <span class="math inline">\(i\)</span> which implies that <span class="math inline">\(p_i\)</span>’s are all equal.</p>
 </div>
 </div>
 </div>
@@ -503,11 +511,11 @@ A solution
 <div class="callout-body-container callout-body">
 <p>These follow from the following:</p>
 <ol type="1">
-<li><span class="math inline">\(\sum_{i = 0}^n x^{2i} = (1 - x^{2(n + 1)})/(1 - x^2)\le 1/(1 - x^2)\)</span> (since <span class="math inline">\(|x| &lt; 1\)</span>).</li>
-<li><span class="math inline">\(\sum_{i = 1}^n 1/i^2 \le 1 + \sum_{i = 2}^n \frac{1}{(i - 1)i} = 2 - 1/n\le 2\)</span>.</li>
-<li><span class="math inline">\(\sum_{i = 1}^n 1/(n + i)\le \int_0^n 1/(n + x) = \sqrt 2\)</span>.<br>
+<li><span class="math inline">\(\sum_{i = 0}^n x^{2i} = (1 - x^{2(n + 1)})/(1 - x^2)\)</span> <span class="math inline">\({}\le 1/(1 - x^2)\)</span> (since <span class="math inline">\(|x| &lt; 1\)</span>).</li>
+<li><span class="math inline">\(\sum_{i = 1}^n 1/i^2 \le 1 + \sum_{i = 2}^n \frac{1}{(i - 1)i}\)</span> <span class="math inline">\({}= 2 - 1/n\le 2\)</span>.</li>
+<li><span class="math inline">\(\sum_{i = 1}^n 1/(n + i)\le \int_0^n 1/(n + x)\)</span> <span class="math inline">\({}= \sqrt 2\)</span>.<br>
 </li>
-<li><span class="math inline">\(\sum_{i = 0}^n \binom{n}{i}^2 = \sum_{i = 0}^n \binom{n}{i}\binom{n}{n - i} = \binom{2n}{n}\)</span> where the last equality follows by noting that choosing <span class="math inline">\(n\)</span> objects out of <span class="math inline">\(2n\)</span> is equivalent to first dividing them into two groups of <span class="math inline">\(n\)</span> each and then choosing from among those groups.</li>
+<li><span class="math inline">\(\sum_{i = 0}^n \binom{n}{i}^2 = \sum_{i = 0}^n \binom{n}{i}\binom{n}{n - i}\)</span> <span class="math inline">\({}= \binom{2n}{n}\)</span> where the last equality follows by noting that choosing <span class="math inline">\(n\)</span> objects out of <span class="math inline">\(2n\)</span> is equivalent to first dividing them into two groups of <span class="math inline">\(n\)</span> each and then choosing from among those groups.</li>
 </ol>
 </div>
 </div>
@@ -748,7 +756,7 @@ A solution
 <ol type="1">
 <li>p.&nbsp;11: “<s>binomial</s> <span class="textcorr">quadratic</span> formula” in the third paragraph.</li>
 <li>p.&nbsp;17: <span class="math inline">\(\Theta\)</span> must be given to be an appropriate set since differentiability is being talked of. For instance, <span class="math inline">\(\Theta\)</span> may be taken to be an interval.</li>
-<li>p.&nbsp;228: In the solution to Ex 7, “<span class="math inline">\(\langle x, y\rangle = 5x_1 y_1 + x_1 y_2 + x_2 y_1 + \cancel{3y_2^2} {\color{YellowOrange}{3x_2 y_2}}\)</span>” and “<span class="math inline">\(5z^2 + \cancel{3z}{\color{YellowOrange}{2z}} + 3 = 0\)</span>”.</li>
+<li>p.&nbsp;228: In the solution to Ex 7, <span class="math inline">\(\text{``}\langle x, y\rangle = 5x_1 y_1 + x_1 y_2 + x_2 y_1\)</span> <span class="math inline">\({}+ \cancel{3y_2^2} {\color{YellowOrange}{3x_2 y_2}}\text{"}\)</span> and <span class="math inline">\(\text{``}5z^2 + \cancel{3z}{\color{YellowOrange}{2z}} + 3 =0\text{"}\)</span>.</li>
 </ol>
 
 
@@ -1329,6 +1337,7 @@ only never just a mere prop.</em></p>
   </div>
 </footer>
 <script src="light-dark-modes.js"></script>
+<script src="mathjax.js"></script>
 
 
 

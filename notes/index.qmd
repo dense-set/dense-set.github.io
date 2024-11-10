@@ -5,7 +5,9 @@ tbl-colwidths: [30, 15, 55]
 ---
 
 <p class="quote">
-For meticulous documentation of the results is almost as important to me as the proofs of results themselves...
+
+For meticulous exposition, and documentation, of the results is almost as important to me as the proofs of results themselves...
+
 </p>
 
 Here, you'll find the following kinds of docs:
@@ -20,9 +22,9 @@ Here, you'll find the following kinds of docs:
     </p>
     <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
       <div class="accordion-body">
-        <p>These are $\mathrm{\LaTeX}$ pdf's that contain logs of the results I prove during the courses I take, while reading math books, or when inspiration strikes. I obsess over maintaining linearity and being precise. My earlier works used to tolerate zero abuse of language or notation resulting in razor-precise, but also excruciatingly long statements for even simple results. However, over time, I believe I have learned how to strike a balance so that more can be said in less. Nevertheless, I still try to be extremely explicit about any abuses in the remarks that occur throughout the pdf's.</p>
+        <p>These are LaTeX pdf's that contain logs of the results I prove during the courses I take, while reading math books, or when inspiration strikes. I obsess over maintaining linearity and being precise. My earlier works used to tolerate zero abuse of language or notation resulting in razor-precise, but that resulted in excruciatingly long statements for even simple results. However, over time, I believe I have learned how to strike a balance so that more can be said in less. Nevertheless, I still try to be extremely explicit about any abuses, via remarks, that occur throughout the pdf's.</p>
 
-        <p>I am also quite nitpicky in mentioning whenever any choice (CC, DC or AC) gets used.</p>
+        <p>I am also quite nitpicky in mentioning whenever any choice (CC, DC or AC) gets used. </p>
       </div>
     </div>
   </div>
@@ -34,7 +36,8 @@ Here, you'll find the following kinds of docs:
     </p>
     <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
       <div class="accordion-body">
-        <p>These are Google Drive links to my handwritten notes (again as pdf's) that will sometimes accompany the "Organized results" pdf's. These are where I write all the proofs&mdash;really recording the journey whose end products are the "Organized results". Expect these to be messy. But sometimes, I do re-write things nicely.</p>
+        <p>These are Google Drive links to my notes that will sometimes accompany the "Organized results" pdf's. These are where I write all the proofs&mdash;really recording the journey whose end products are the "Organized results". Expect these to be messy. But sometimes, I do re-write things nicely.</p>
+        <p>Primarily, they are pdf's of handwritten notes. Only lately have I started writing these in $\mathrm{\LaTeX}$.</p>
       </div>
     </div>
   </div>
@@ -75,6 +78,8 @@ Though the "Organized results" here often contain all the results proved in the 
 +------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 | (MA 605) Commutative Algebra                   | [o.r.](sanjay-master-commie.pdf){target="_blank"}, [notes](https://drive.google.com/drive/folders/1weGk0m5_xZliDL_4LdjpNgbnR3pOBQA?usp=drive_link){target="_blank"} | –                                                                                                                                                                               |
 +------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| (MA 627) Algebraic Topology                    | [o.r.](sanjay-master-alto.pdf)                                                                                                                                      | Until about 2/3-rd of the course.                                                                                                                                               |
++------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 | (MA 509) Topics in Real Analysis               | [o.r.](mohan-master.pdf){target="_blank"}, [notes](https://drive.google.com/drive/folders/1OHbgbJRpOLsY7pYKkeE4n0TY48LeBTKF?usp=drive_link){target="_blank"}        | §3 of Chapter 1: Some results on base representations of reals.                                                                                                                 |
 |                                                |                                                                                                                                                                     |                                                                                                                                                                                 |
 |                                                |                                                                                                                                                                     | Theorem 3.8 of Chapter 3 ("Extending a continuous function at limiting values").                                                                                                |
@@ -82,6 +87,8 @@ Though the "Organized results" here often contain all the results proved in the 
 |                                                |                                                                                                                                                                     | Chapter 4: Generalized definition of differentiability to be able to talk of at limit points; the results that follow are also of such generality.                              |
 +------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 | (MA 502) Complex Analysis                      | [o.r.](bipul-master.pdf){target="_blank"}, [notes](https://drive.google.com/drive/folders/1PTAqZZuawNhLdXeZVuJmgL6NsRgtQXp1?usp=drive_link){target="_blank"}        | §1 of Chapter 3: Tried laying the foundations for complex line integrals on a firm footing.                                                                                     |
++------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| (MA 626) Functional Analysis                   | [o.r.](gadadhar-master.pdf)                                                                                                                                         | Until about 2/3-rd of the course.                                                                                                                                               |
 +------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 | (MA 629) Introduction to Differential Geometry | [o.r.](rohit-master.pdf){target="_blank"}, [notes](https://drive.google.com/drive/folders/1IkpIXU1dfSk2A9fY_TWgUenjEJV9V0ms?usp=drive_link){target="_blank"}        | Very incomplete; just multi-variable calculus is included. However, what's proven is quite generalized, in the same spirit as in Cartan's amazing book *Differential Calculus*. |
 +------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -116,6 +123,8 @@ o.r.: Organized results
 | Topology, metrics and linear spaces | [o.r.](tmn-master.pdf){target="_blank"}, [notes](https://drive.google.com/drive/folders/1Ig-YK2Sw2jtfifCym8HgopJssXhCR8jQ?usp=drive_link){target="_blank"} | –                                                                                                                                       |
 +-------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------+
 | Category theory                     | [o.r.](sanjay-master-cat.pdf){target="_blank"}                                                                                                             | These are notes of CatCafé, a lecture series delivered by [Prof Sanjay](https://iitgn.ac.in/faculty/maths/fac-sanjay){target="_blank"}. |
++-------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------+
+| The Moore-Aronszajn theorem         | [o.r.](moore-aronszajn.pdf)                                                                                                                                | A component of my Master's project with Prof Gadadhar Misra                                                                             |
 +-------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------+
 
 : {.table .table-hover}

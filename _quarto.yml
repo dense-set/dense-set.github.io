@@ -5,6 +5,7 @@ project:
   resources:
     - files/
     - non-math/
+    - blog/
     - notes/
     - now/
     - records/
@@ -30,8 +31,8 @@ website:
         href: blog/index.qmd
       - text: Non-math
         href: non-math/index.qmd
-      - text: Now
-        href: now/index.qmd
+      #- text: Now
+      #  href: now/index.qmd
     
     right: 
       - text: "{{< iconify clarity email-solid >}}"
@@ -40,9 +41,9 @@ website:
       - text: "{{< iconify simple-icons x >}}"
         aria-label: x (previously twitter)
         href: https://x.com/dense_set
-      - text: "{{< iconify simple-icons mastodon >}}"
-        aria-label: mastodon
-        href: https://mathstodon.xyz/@denseset
+      #- text: "{{< iconify simple-icons mastodon >}}"
+      #  aria-label: mastodon
+      #  href: https://mathstodon.xyz/@denseset
       - text: "{{< iconify simple-icons github >}}"
         aria-label: github
         href: https://github.com/dense-set
@@ -83,7 +84,7 @@ website:
 
 
 # Metdata stuff
-pagetitle: "{{< meta title >}} | {{< var website.title >}}"
+# pagetitle: "{{< meta title >}} | {{< var website.title >}}"
 description-meta: "{{< var website.description >}}"
 author-meta: "{{< var website.author >}}"
 

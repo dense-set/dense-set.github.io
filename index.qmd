@@ -3,14 +3,13 @@ title: Hi there!
 ---
 
 ::::: {.grid style="gap: 20px 10px;"}
-
 ```{=html}
     <div class="g-col-12" style="font-size: 0;">
         <img src="files/rainbow-bar.svg" height="5px" width="100%">
     </div>
 ```
 
-:::{.g-col-12 .g-col-sm-4}
+::: {.g-col-12 .g-col-sm-4}
 ```{=html}
     <div class="grid" style="--bs-columns: 5; gap: 0">
         <div class="g-col-1 g-col-sm-0"></div>
@@ -27,10 +26,17 @@ title: Hi there!
 :::
 
 ::: {.g-col-12 .g-col-sm-8}
-<p>I am Sarthak (he/him), a math grad student in his final year at [IIT Gandhinagar](https://iitgn.ac.in/). My advisor is the wonderful [Prof Gadadhar Misra](https://www.isibang.ac.in/~gm/), and we plan to do something functional-analytical for my Master's project.</p>
+I am Sarthak (he/him) and I recently completed my Master's in Math from [IIT Gandhinagar](https://iitgn.ac.in/).
+
 <p>Previously, in my undergrad days, I was a physics major at [St. Stehphen's College](https://www.ststephens.edu/). There, I took some pure math electives and had my first brush with *real* math. I immediately knew that the precision and rigor that math provided would be my solace. This led to my physics-to-math switch in 2021, and it was one of the most happy [(and dichotomously, tumultuous)]{style="font-size: 0.7em"} decisions I ever made.</p>
-<p>I still haven't committed to anything particular in math. Nevertheless, I have enjoyed the "analytical" side of math a bit more than its "algebraic" side, and that could be due to my physics roots. [(Indeed, during my physics days, doing functional analysis rigorously (for QM) had been a goal.)]{style="font-size: 0.7em"} Nevertheless, I have eventually fallen for whatever I have studied so far, sometimes surprisingly (for instance, algebraic topology). Hence, I am still trying to gather as many tools in my kit as possible before taking the next step in my mathematical career.</p>
-<p style="margin-bottom: 0px">After all, isn't it the essence of math not to commit to a single perspective but to try looking at all sides? Wait, that's the [Yoneda perspective](https://www.math3ma.com/blog/the-yoneda-perspective), lol!</p>
+
+<p>Since then, I have eventually fallen for almost every kind of math that has crossed my path so far, sometimes surprisingly (for instance, algebraic topology). Nevertheless, I have enjoyed the "analytical" side of math a bit more than its "algebraic" side, and that could be due to my physics roots---real, complex and functional analyses all hold special places in my heart. [(Indeed, during my physics days, doing functional analysis rigorously (for QM) had been a goal.)]{style="font-size: 0.7em"} I also enjoy logic, and hold great respect for constructivists.</p>
+
+<p style="margin-bottom: 0px">
+
+Apart from doing math, my other observable states include playing piano, learning Italian, and crocheting.
+
+</p>
 :::
 
 ```{=html}
@@ -38,5 +44,4 @@ title: Hi there!
         <img src="files/rainbow-bar.svg" height="5px" width="100%">
     </div>
 ```
-
 :::::
